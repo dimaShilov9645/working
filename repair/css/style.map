@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "../sass/style.css",
+	"sources": [
+		"../sass/style.sass"
+	],
+	"sourcesContent": [
+		".title1 {\n\tfont: {\n\t\tsize: 14px;\n\t\tfamily: Museo Sans Cyrl 900; } }\n\n\n"
+	],
+	"mappings": ";AAAA,AAAA,OAAO,CAAC;EACP,IAAI,AAE2B,CAAC,AAD/B,IAAI,EAAE,IAAK;EADZ,IAAI,AAE2B,CAAC,AAA/B,MAAM,EAAE,mBAAoB;CAAK",
+	"names": []
+}
