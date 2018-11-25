@@ -1,0 +1,44 @@
+.main
+	background-color: $light-bg-color
+	padding: 60px
+	&-wrap
+		display: flex
+	&-text
+		flex-basis: 50%
+		&__title
+			font-size: 41px
+			line-height: 55px
+			margin-top: 20px
+			+bold
+			margin-bottom: 69px
+			span
+				font-size: 20px
+				display: block
+				margin-top: 50px
+	&-image
+		flex-basis: 50%
+	&-advantages
+		display: flex
+		flex-direction: column
+		max-width: 350px
+		&__item
+			display: flex
+			align-items: center
+			margin-bottom: 30px
+			//border: 1px solid red
+		&__img
+			min-width: 40px
+			height: 40px
+			border-radius: 50%
+			border: 2px solid $primary-color
+			margin-right: 30px
+			background-size: 20px
+			background-repeat: no-repeat
+			background-position: center
+			&-1
+				background-image: url('../img/main/clock.png')
+			&-2
+				background-image: url('../img/main/calculator.png')
+				background-size: 16px
+			&-3
+				background-image: url('../img/main/paint-board.png')
