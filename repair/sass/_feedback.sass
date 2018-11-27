@@ -1,0 +1,50 @@
+.feedback
+	padding: 94px 0
+	background: url('../img/feedback/feedback.bg.jpg') no-repeat center right -40%
+.form
+	max-width: 575px
+	&__title
+		font-size: 24px
+		+bold
+		line-height: 35px
+		margin-bottom: 45px
+	&__subtitle
+		display: block
+		margin-bottom: 50px
+	&__input
+		width: 270px
+		margin-bottom: 30px
+		&:first-child
+			margin-right: 30px
+	&__button
+		padding: 28px
+		display: block
+		width: 100%
+		font-size: 16px
+	&__subbutton
+		display: flex
+		justify-content: space-between
+		margin-top: 10px
+		&__text
+			font-size: 15px
+			line-height: 1.6
+			+light
+			color: #3f3f3f
+			width: 240px
+		&__img
+			width: 215px
+			&:before
+				content: ''
+				display: block
+				margin-left: -60px
+				margin-bottom: -45px
+				width: 40px
+				height: 40px
+				background-image: url('../img/feedback/phone.png')
+				background-size: 16px
+				background-repeat: no-repeat
+				background-position: center
+				border-radius: 50%
+				border: 2px solid #cecece
+		&__tel
+			+bold
