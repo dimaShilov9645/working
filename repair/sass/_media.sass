@@ -10,6 +10,24 @@
 			transform-origin: center
 			transform: scale(1)
 			z-index: 1;
+@media (max-width: 1065px)
+	.modal
+		&__dialog
+		&__services
+			padding-top: 0px
+		&-product
+			margin: 20px 80px
+			flex-direction: column
+			&__text
+				margin-top: -115px
+				width: 80%
+			&__img
+				margin-top: 100px
+				width: 70%
+			&__price
+				display: none
+		&__works
+		 display: none
 @media (max-width: 992px)
 	.container
 		width: 767px
@@ -20,7 +38,11 @@
 				line-height: 36px
 		&-wrap
 			align-items: center
-
+	.modal
+		&-product
+			&__title
+				&:after
+					display: none
 	
 
 @media (max-width: 768px)
@@ -49,7 +71,11 @@
 		 	text-align: center
 		&-advantages
 			margin: 0 auto
-			
+	.modal
+		&-product
+			display: none
+		&__services
+			width: 0%
 	.form
 		margin: 0 auto
 		&__button
@@ -118,3 +144,28 @@
 					display: none
 	.form-media
 		text-align: center
+	.modal
+		&__dialog
+			height: 80%
+		&-form
+			width: 90%
+			&__title
+				margin-bottom: 20px
+				font-size: 18px
+			&__subtitle
+				font-size: 13px
+				padding-bottom: 15px
+			&__input
+				width: 90%
+				margin: 2px 0
+			&__button
+				width: 90%
+				margin-top: 10px
+				font-size: 13px
+			&__subbutton
+				width: 90%
+				font-size: 12px
+				&__text
+					margin: 15px 0 15px 0
+				&__tel
+					font-size: 18px
