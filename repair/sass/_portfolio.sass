@@ -1,0 +1,28 @@
+.portfolio
+	background-color: $light-bg-color
+	background-image: url('../img/portfolio/fon.png')
+	padding: 90px 0 170px 0
+.slider
+	&__item
+		text-align: center
+		img
+			margin: auto
+.arrow
+	position: absolute
+	bottom: -68px;
+	width: 45px
+	height: 19px
+	&:hover
+		cursor: pointer
+	&-right
+		left: 50%
+		transform: translateX(15px)
+		background: url('../img/arrow-right.png') no-repeat center
+		background-size: 100%
+	&-left
+		left: 50%
+		transform: translateX(-45px)
+		margin-left: -15px
+		background: url('../img/arrow-left.png') no-repeat center
+		background-size: 100%
+

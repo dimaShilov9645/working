@@ -10,9 +10,13 @@
 			transform-origin: center
 			transform: scale(1)
 			z-index: 1;
+	.slider
+		&__item
+			img
+				max-width: 95%
+
 @media (max-width: 1065px)
 	.modal
-		&__dialog
 		&__services
 			padding-top: 0px
 		&-product
@@ -44,6 +48,23 @@
 				&:after
 					display: none
 	
+@media (max-width: 920px)
+	.modal
+		&-product
+			display: none
+		&__services
+			width: 0%
+	.form
+		margin: 0 auto
+		&__subbutton
+			&__img
+				width: 215px
+				&:before
+					display: none
+		&__title
+			text-align: center
+		&__subtitle
+			text-align: center
 
 @media (max-width: 768px)
 	.header
@@ -71,24 +92,6 @@
 		 	text-align: center
 		&-advantages
 			margin: 0 auto
-	.modal
-		&-product
-			display: none
-		&__services
-			width: 0%
-	.form
-		margin: 0 auto
-		&__button
-		&__subbutton
-			&__text
-			&__img
-				width: 215px
-				&:before
-					display: none
-		&__title
-			text-align: center
-		&__subtitle
-			text-align: center
 
 @media (max-width: 480px)
 	.container
@@ -145,7 +148,7 @@
 	.form-media
 		text-align: center
 	.modal
-		&__dialog
+		&__dialogs
 			height: 80%
 		&-form
 			width: 90%
@@ -169,3 +172,9 @@
 					margin: 15px 0 15px 0
 				&__tel
 					font-size: 18px
+	.section
+		&-title
+			font-size: 20px
+			margin: 0 0 25px 0
+	.portfolio
+		padding: 35px 0 100px 0

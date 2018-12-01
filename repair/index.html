@@ -6,6 +6,8 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
 	<title>Ремонт квартир</title>
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/magnific-popup.css">
+	<link rel="stylesheet" href="css/slick.css">
 	<script></script>
 </head>
 <body>
@@ -20,7 +22,7 @@
 					<a class="header-text__phone" href="tel:+74954225131">+7 (495) 42-251-31</a>
 				</div>
 				<div class="header-text__button">
-					<button class="button button-media" id="button-callback">
+					<button class="button button-media popup-content" id="button-callback" href="#modal-callback">
 						<img class="hidden-img" src="img/header-phone.svg" alt="">
 						<span class="hidden-xs">Перезвоните мне</span></button>
 				</div>
@@ -88,9 +90,9 @@
 		</div>
 	</section>
 
-	<div class="modal" id="modal-callback">
-		<div class="modal__dialog">
-			<div class="modal__close">&#10006;</div>
+	<div class="modal mfp-hide" id="modal-callback">
+		<div class="modal__dialogs">
+			<!-- <div class="modal__close">&#10006;</div> -->
 			<div class="modal__services">
 				<div class="modal-product">
 					<div class="modal-product__img">
@@ -144,7 +146,36 @@
 			</div>
 		</div>
 	</div>
+
+	<section class="portfolio">
+		<div class="container">
+			<h2 class="section-title section-title_center">Работая с 2007 года,<br>мы сделали более 500 ремонтов в квартирах и домах</h2>
+			<div class="slider">
+				<div class="slider__item">
+					<img src="img/portfolio/slider-image-1.jpg" alt="image">
+				</div>
+				<div class="slider__item">
+					<img src="img/portfolio/slider-image-2.jpg" alt="image">
+				</div>
+				<div class="slider__item">
+					<img src="img/portfolio/slider-image-3.jpg" alt="image">
+				</div>
+				<div class="slider__item">
+					<img src="img/portfolio/slider-image-1.jpg" alt="image">
+				</div>
+				<div class="slider__item">
+					<img src="img/portfolio/slider-image-2.jpg" alt="image">
+				</div>
+				<div class="slider__item">
+					<img src="img/portfolio/slider-image-3.jpg" alt="image">
+				</div>
+			</div>
+		</div>
+	</section>
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="js/jquery.magnific-popup.js"></script>
+<script src="js/slick.min.js"></script>
 <script src="js/script.js"></script> 
 </body>
 </html>
