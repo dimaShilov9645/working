@@ -19,7 +19,7 @@ jQuery(document).ready(function($) {
     });
 });
 
-$(document).ready(function(){
+/*$(document).ready(function(){
   $('.slider').slick({
   	slidesToShow: 3,
   	slidesToScroll: 1,
@@ -49,4 +49,43 @@ $(document).ready(function(){
     }
   ]
   });
+});*/
+
+$(document).ready(function(){
+  $(".slider").owlCarousel({
+  	rtl:true,
+   	responsiveClass:true,
+    margin:20,
+    nav:true,
+    navText : ["",""],
+    dots: false,
+    loop : true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:2
+        },
+        1000:{
+            items:3
+        }
+    }	
+  });
+});
+
+$(document).ready(function(){
+$('.form-media').on('submit', function(){
+  var nameVal = $('[name = name]').val();
+      phoneVal = $('[name = phone]').val();
+  
+        $.ajax({
+          url: '/send.php',
+          data:{name:nameVal, phone:phoneVal},
+          success: function(){
+            alert('Load was performed.');
+          }
+      });
+        return false;
+    });
 });
