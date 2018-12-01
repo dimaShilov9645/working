@@ -61,13 +61,13 @@ $(document).ready(function(){
     dots: false,
     loop : true,
     responsive:{
-        0:{
+        768:{
             items:1
         },
-        600:{
+        900:{
             items:2
         },
-        1000:{
+        1080:{
             items:3
         }
     }	
