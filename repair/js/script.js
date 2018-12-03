@@ -61,10 +61,10 @@ $(document).ready(function(){
     dots: false,
     loop : true,
     responsive:{
-        768:{
+        0:{
             items:1
         },
-        900:{
+        768:{
             items:2
         },
         1080:{
@@ -72,9 +72,9 @@ $(document).ready(function(){
         }
     }	
   });
-});
 
-$(document).ready(function(){
+
+
 $('.form-media').on('submit', function(){
   var nameVal = $('[name = name]').val();
       phoneVal = $('[name = phone]').val();
