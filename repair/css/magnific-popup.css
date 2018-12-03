@@ -143,8 +143,7 @@ button::-moz-focus-inner {
   .mfp-close:hover,
   .mfp-close:focus {
     opacity: 1; }
-  .mfp-close:active {
-    top: 42px; }
+  
 
 .mfp-close-btn-in .mfp-close {
   color: #000; }
