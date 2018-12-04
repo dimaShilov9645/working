@@ -81,7 +81,7 @@
 				<span class="form__subtitle">Оставьте заявку на разработку бесплатного дизайн-проекта!</span>
 				<form action="#" class="form-media">
 					<input name="name" type="text" class="input input-name form__input" placeholder="Выше имя">
-					<input name="phone" type="tel" class="input input-tel form__input" placeholder="Выш телефон" pattern="^\+7\d{3}\d{7}$">
+					<input name="phone" type="tel" class="input input-tel form__input" placeholder="Выш телефон" data-mask="+7 (000)-000-00-00">
 					<button type="submit" class="button form__button">Получить бесплатный дизайн-проект</button>
 				</form>
 				<div class="form__subbutton">
@@ -138,7 +138,7 @@
 				<span class="modal-form__subtitle">Заполните поля ниже - мы свяжемся с Вами</span>
 				<form action="#" class="modal-form-media">
 					<input name="name" type="text" class="input input-name modal-form__input" placeholder="Выше имя">
-					<input name="phone" type="tel" class="input input-tel modal-form__input" placeholder="Выш телефон" pattern="^\+7\d{3}\d{7}$">
+					<input name="phone" type="tel" class="input input-tel modal-form__input" placeholder="Выш телефон" data-mask="+7 (000)-000-00-00">
 					<button type="submit" class="button modal-form__button">Узнать стоимость</button>
 				</form>
 				<div class="modal-form__subbutton">
@@ -174,7 +174,7 @@
 			</div>
 		</div>
 	</section>
-	
+
 	<section class="lower-form">
 		<div class="container">
 			<div class="form-back">
@@ -217,7 +217,7 @@
 					<span class="form-back__right__subtitle">Для этого заполните форму ниже</span>
 					<form action="#" class="form-back-media">
 						<input name="name" type="text" class="input input-name form-back__input" placeholder="Выше имя">
-						<input name="phone"type="tel" class="input input-tel form-back__input" placeholder="Выш телефон" pattern="^\+7\d{3}\d{7}$">
+						<input name="phone"type="tel" class="input input-tel form-back__input" placeholder="Выш телефон" data-mask="+7 (000)-000-00-00">
 						<button type="submit" class="button form-back__button">Рассчитать стоимость</button>
 					</form>
 						<h3 class="form-back__subbutton__text">Мы перезвоним Вам в течение 60 секунд</h3>
@@ -230,6 +230,7 @@
 <script src="js/jquery.magnific-popup.js"></script>
 <script src="js/slick.min.js"></script>
 <script src="js/owl.carousel.min.js"></script>
-<script src="js/script.js"></script> 
+<script src="js/jquery.mask.min.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>
