@@ -1,12 +1,65 @@
+.lower-form
+	background: url('../img/lower-form-bg.jpg') no-repeat center left 156%
+	background-size: 65%
+	background-color: #ffc000
+	padding: 90px 0
 .form-back
 	display: flex
 	&__left
-		padding: 80px 0	80px 7%
-		background-color: #ffc000;
 		width: 55%
+		color: #000
+		&__title
+			display: inline-block
+			+bold
+			padding-right: 25px
+			margin: 0
+			font-size: 22px
+		&__subtitle
+			display: inline-block
+			+light
+			margin: 40px 0
+  		font-size: 16px
+	&-advantages
+		margin-top: 40px
+		+medium
+		font-size: 18px
+		width: 470px
+		&__item
+			display: flex
+			align-items: center
+			padding: 15px 0
+		&__img
+			padding: 10px 12px
+			margin-right: 35px
+			border: 3px solid #000
+			border-radius: 50%
+			+bold
+			font-size: 14px
 	&__right
-		padding: 80px 7% 80px 0
-		
-		background: url('../img/lower-form-bg.jpg') no-repeat center
-		background-size: 100%
-		width: 45%
+		color: $text-color
+		text-align: center
+		margin-left: 12%
+		width: 370px
+		&__title
+			display: inline-block
+			+bold
+			margin: 0
+			font-size: 22px
+		&__subtitle
+			display: inline-block
+			+light
+			margin: 40px 0
+  		font-size: 16px
+ &__input
+  width: 99%
+  margin: 9px 0
+ &__button
+  width: 99%
+  margin: 24px 0
+  height: 68px
+ &__subbutton__text
+ 	font-size: 15px
+ 	+light
+ 	padding: 0
+ 	margin: 8px 0
+ 	

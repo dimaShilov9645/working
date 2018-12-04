@@ -3,12 +3,23 @@
 		padding: 5% 0
 		background: url('../img/feedback/feedback.bg.jpg') no-repeat center left 100%
 		background-size: 45%
+	.lower-form
+		background: url('../img/lower-form-bg.jpg') no-repeat center left 100%
+		background-size: 50%
+		background-color: #ffc000
+		padding: 400px 0
+
+@media (max-width: 3500px)
+	.lower-form
+		padding: 170px 0
 
 @media (max-width: 2200px)
 	.feedback
 		padding: 2% 0
 		background: url('../img/feedback/feedback.bg.jpg') no-repeat center left 100%
 		background-size: 45%
+	.lower-form
+		padding: 90px 0
 
 @media (max-width: 1750px)
 	.feedback
@@ -17,6 +28,14 @@
 		background-size: content
 		&:before
 			width: 60%
+	.lower-form
+		background: url('../img/lower-form-bg.jpg') no-repeat center left 156%
+		background-size: 65%
+		background-color: #ffc000
+
+@media (max-width: 1350px)
+	.lower-form
+		padding: 50px 0
 
 @media (max-width: 1199px)
 	.container
@@ -34,6 +53,15 @@
 		&__item
 			img
 				max-width: 95%
+	.lower-form
+		padding: 20px 0
+	.form-back
+		&__left
+			&__title
+				font-size: 22px
+			&__subtitle
+				margin-bottom: 0
+	  		font-size: 16px
 
 @media (max-width: 1065px)
 	.modal
@@ -52,6 +80,41 @@
 				display: none
 		&__works
 		 display: none
+	.form-back
+		&__left
+			&__title
+				font-size: 18px
+			&__subtitle
+	  		font-size: 14px
+		&-advantages
+			margin-top: 20px
+			font-size: 15px
+			width: 390px
+			&__item
+				padding: 10px 0
+			&__img
+				margin-right: 25px
+				font-size: 12px
+		&__right
+			margin-left: 6%
+			width: 320px
+			&__title
+				font-size: 18px
+			&__subtitle
+				margin: 20px 0
+	  		font-size: 14px
+	 &__input
+	  width: 85%
+	  margin: 4px 0
+	  height: 58px
+	 &__button
+	  width: 85%
+	  margin: 24px 0
+	  height: 58px
+	 &__subbutton__text
+	 	font-size: 13px
+	 	margin: 0
+
 @media (max-width: 992px)
 	.container
 		width: 767px
@@ -85,6 +148,16 @@
 			text-align: center
 		&__subtitle
 			text-align: center
+	.lower-form
+		background: url('../img/lower-form-bg.jpg') no-repeat center
+		background-size: 100%
+		padding: 30px
+	.form-back
+		&__left
+			display: none
+		&__right
+			margin: 0 auto
+
 
 @media (max-width: 768px)
 	.header
@@ -119,6 +192,10 @@
 		width: 80%
 		height: 80%
 		margin: auto
+	.lower-form
+		background: url('../img/lower-form-bg.jpg') no-repeat center
+		background-size: cover
+		padding: 30px
 
 @media (max-width: 480px)
 	.container
@@ -206,3 +283,12 @@
 			margin: 0 0 25px 0
 	.portfolio
 		padding: 35px 0 100px 0
+	.form-back
+		&__right
+			margin: 0 auto
+			&__title
+				font-size: 16px
+			&__subtitle
+				font-size: 12px
+		&__subbutton__text
+			font-size: 12px
