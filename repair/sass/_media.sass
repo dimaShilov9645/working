@@ -62,7 +62,11 @@
 			&__subtitle
 				margin-bottom: 0
 	  		font-size: 16px
-
+	.stage-after
+		&:after
+			display: none
+	.stage
+		margin: 0 8px
 @media (max-width: 1065px)
 	.modal
 		&__services
@@ -130,6 +134,10 @@
 			&__title
 				&:after
 					display: none
+	.price
+		&__title
+			padding-left: 90px
+			padding-right: 90px
 	
 @media (max-width: 920px)
 	.modal
@@ -157,7 +165,20 @@
 			display: none
 		&__right
 			margin: 0 auto
-
+	.stage
+		margin: 15px 8px
+	.order
+		&-wrap
+			margin-bottom: 20px
+		&__title
+			font-size: 24px
+		&__subtitle
+			font-size: 18px
+			margin-bottom: 30px
+		&-bottom
+			padding: 60px 0
+			&__title
+				font-size: 22px
 
 @media (max-width: 768px)
 	.header
@@ -196,6 +217,19 @@
 		background: url('../img/lower-form-bg.jpg') no-repeat center
 		background-size: cover
 		padding: 30px
+	.price
+		&__title
+			font-size: 22px
+			padding: 30px 0 0 0
+			margin-bottom: 30px
+		&__subtitle
+			font-size: 16px
+			padding-bottom: 25px
+	.order
+		&-bottom
+			&__title
+				font-size: 22px
+
 
 @media (max-width: 480px)
 	.container
@@ -294,3 +328,41 @@
 				font-size: 12px
 		&__subbutton__text
 			font-size: 12px
+	.price
+		&__title
+			font-size: 16px
+			line-height: 25px
+			padding: 30px 10px 0 10px
+		&__subtitle
+			font-size: 15px
+	.card
+		min-height: 300px
+		max-width: 300px
+		margin: 10px 30px
+		padding-bottom: 30px
+		&__img
+			&-wrap
+				position: relative
+				margin-bottom: 20px
+				&:after
+					content: ''
+					height: 98.8%
+					margin: 0 auto
+		&__title
+			font-size: 16px
+		&__link
+			font-size: 14px
+	.order
+		&-wrap
+			flex-direction: column
+			align-items: center
+		&__title
+			font-size: 18px
+		&__subtitle
+			font-size: 16px
+		&-bottom
+			padding: 25px 5px
+			line-height: 1.563
+			&__title
+				font-size: 16px
+				word-wrap: break-word

@@ -10,7 +10,39 @@
 	<link rel="stylesheet" href="css/slick.css">
 	<link rel="stylesheet" href="css/owl.carousel.min.css">
 	<link rel="stylesheet" href="css/owl.theme.default.min.css">
-	<script></script>
+	<link rel="stylesheet" href="css/animate.css">
+	<script type="text/javascript">
+		function validate_form1()
+		{
+				valid = true;
+        if ( document.form_valid1.name.value == "" || document.form_valid1.phone.value == "")
+        {
+                alert ( "Вы заполнили не все поля." );
+                valid = false;
+        }
+        return valid;
+		}
+		function validate_form2()
+		{
+				valid = true;
+        if ( document.form_valid2.name.value == "" || document.form_valid2.phone.value == "")
+        {
+                alert ( "Вы заполнили не все поля." );
+                valid = false;
+        }
+        return valid;
+		}
+		function validate_form3()
+		{
+				valid = true;
+        if ( document.form_valid3.name.value == "" || document.form_valid3.phone.value == "")
+        {
+                alert ( "Вы заполнили не все поля." );
+                valid = false;
+        }
+        return valid;
+		}
+</script>
 </head>
 <body>
 	<header class="header">
@@ -23,7 +55,7 @@
 					<span class="header-text__city">Калуга, Москва, МОs</span>
 					<a class="header-text__phone" href="tel:+74954225131">+7 (495) 42-251-31</a>
 				</div>
-				<div class="header-text__button">
+				<div class="header-text__button wow pulse" data-wow-delay="0.5s">
 					<button class="button button-media popup-content" id="button-callback" href="#modal-callback">
 						<img class="hidden-img" src="img/header-phone.svg" alt="">
 						<span class="hidden-xs">Перезвоните мне</span></button>
@@ -41,7 +73,7 @@
 						<span>с гарантией качества, прописанной в&nbsp;договоре</span>
 					</h1>
 					<div class="main-advantages">
-						<div class="main-advantages__item">
+						<div class="main-advantages__item wow rotateInDownLeft" data-wow-delay="0.2s">
 							<div class="main-advantages__img main-advantages__img-1">
 							</div>
 							<div class="main-advantages__text">
@@ -49,7 +81,7 @@
 							</div>
 						</div>
 						<!--main-avantages__item-->
-						<div class="main-advantages__item">
+						<div class="main-advantages__item wow rotateInDownLeft" data-wow-delay="0.6s">
 							<div class="main-advantages__img main-advantages__img-2">
 							</div>
 							<div class="main-advantages__text">
@@ -57,7 +89,7 @@
 							</div>
 						</div>
 						<!--main-avantages__item-->
-						<div class="main-advantages__item">
+						<div class="main-advantages__item wow rotateInDownLeft" data-wow-delay="1s">
 							<div class="main-advantages__img main-advantages__img-3">
 							</div>
 							<div class="main-advantages__text">
@@ -79,14 +111,14 @@
 			<div class="form">
 				<h2 class="form__title">Мы бесплатно разработаем дизайн-проект Вашего жилья и реализуем его!</h2>
 				<span class="form__subtitle">Оставьте заявку на разработку бесплатного дизайн-проекта!</span>
-				<form action="#" class="form-media">
-					<input name="name" type="text" class="input input-name form__input" placeholder="Выше имя">
-					<input name="phone" type="tel" class="input input-tel form__input" placeholder="Выш телефон" data-mask="+7 (000)-000-00-00">
+				<form action="#" class="form-media" name="form_valid1" onsubmit="return validate_form1();">
+					<input name="name" type="text" class="input input-name form__input" placeholder="Выше имя" required="required">
+					<input name="phone" type="tel" class="input input-tel form__input" placeholder="Выш телефон" data-mask="+7 (000) 000-00-00" required="required" pattern="[\+]\d{1}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}">
 					<button type="submit" class="button form__button">Получить бесплатный дизайн-проект</button>
 				</form>
-				<div class="form__subbutton">
+				<div class="form__subbutton wow slideInLeft" data-wow-delay="0.2s">
 						<h3 class="form__subbutton__text">Наш менеджер перезвонит Вам в течение 60 секунд</h3>
-						<h3 class="form__subbutton__text form__subbutton__img">или перезвоните нам сами <br><span class="form__subbutton__tel">+7 (495) 42-251-31</span></h3>
+						<h3 class="form__subbutton__text form__subbutton__img">или перезвоните нам сами <br><span class="form__subbutton__tel ">+7 (495) 42-251-31</span></h3>
 				</div>
 			</div>
 		</div>
@@ -136,9 +168,9 @@
 			<div class="modal-form">
 				<h2 class="modal-form__title">Узнайте точную стоимость ремонта по телефону!</h2>
 				<span class="modal-form__subtitle">Заполните поля ниже - мы свяжемся с Вами</span>
-				<form action="#" class="modal-form-media">
-					<input name="name" type="text" class="input input-name modal-form__input" placeholder="Выше имя">
-					<input name="phone" type="tel" class="input input-tel modal-form__input" placeholder="Выш телефон" data-mask="+7 (000)-000-00-00">
+				<form action="#" class="modal-form-media" name="form_valid2" onsubmit="return validate_form2();">
+					<input name="name" type="text" class="input input-name modal-form__input" placeholder="Выше имя" required="required">
+					<input name="phone" type="tel" class="input input-tel modal-form__input" placeholder="Выш телефон" data-mask="+7 (000) 000-00-00" required="required" pattern="[\+]\d{1}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}">
 					<button type="submit" class="button modal-form__button">Узнать стоимость</button>
 				</form>
 				<div class="modal-form__subbutton">
@@ -151,7 +183,7 @@
 
 	<section class="portfolio">
 		<div class="container">
-			<h2 class="section-title section-title_center">Работая с 2007 года,<br>мы сделали более 500 ремонтов в квартирах и домах</h2>
+			<h2 class="section-title section-title_center wow fadeInUp" data-wow-delay="0.2s">Работая с 2007 года,<br>мы сделали более 500 ремонтов в квартирах и домах</h2>
 			<div class="slider owl-carousel owl-theme">
 				<div class="item">
 					<img src="img/portfolio/slider-image-1.jpg" alt="image">
@@ -182,28 +214,28 @@
 					<h2 class="form-back__left__title">Мы можем озвучить Вам примерную стоимость работы и материалов по телефону</h2>
 					<span class="form-back__left__subtitle">Для этого нужно ответить на 4 вопроса:</span>
 					<div class="form-back-advantages">
-						<div class="form-back-advantages__item">
+						<div class="form-back-advantages__item wow zoomIn" data-wow-delay="0.2s">
 							<div class="form-back-advantages__img">1.</div>
 							<div class="form-back-advantages__text">
 								Какова площадь помещения?
 							</div>
 						</div>
 						<!--main-avantages__item-->
-						<div class="form-back-advantages__item">
+						<div class="form-back-advantages__item wow zoomIn" data-wow-delay="0.4s">
 							<div class="form-back-advantages__img">2.</div>
 							<div class="form-back-advantages__text">
 								У Вас новостройка или вторичное жилье?
 							</div>
 						</div>
 						<!--main-avantages__item-->
-						<div class="form-back-advantages__item">
+						<div class="form-back-advantages__item wow zoomIn" data-wow-delay="0.6s">
 							<div class="form-back-advantages__img">3.</div>
 							<div class="form-back-advantages__text">
 								Где находится помещение, в котором будет производиться ремонт?
 							</div>
 						</div>
 						<!--main-avantages__item-->
-						<div class="form-back-advantages__item">
+						<div class="form-back-advantages__item wow zoomIn" data-wow-delay="0.8s">
 							<div class="form-back-advantages__img">4.</div>
 							<div class="form-back-advantages__text">
 								Назначение помещения?
@@ -215,9 +247,9 @@
 				<div class="form-back__right">
 					<h2 class="form-back__right__title">Оставьте заявку на бесплатный расчет ремонта по телефону</h2>
 					<span class="form-back__right__subtitle">Для этого заполните форму ниже</span>
-					<form action="#" class="form-back-media">
-						<input name="name" type="text" class="input input-name form-back__input" placeholder="Выше имя">
-						<input name="phone"type="tel" class="input input-tel form-back__input" placeholder="Выш телефон" data-mask="+7 (000)-000-00-00">
+					<form action="#" class="form-back-media" name="form_valid3" onsubmit="return validate_form3();">
+						<input name="name" type="text" class="input input-name form-back__input" placeholder="Выше имя" required="required">
+						<input name="phone"type="tel" class="input input-tel form-back__input" placeholder="Выш телефон" data-mask="+7 (000) 000-00-00" pattern="[\+]\d{1}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" required="required">
 						<button type="submit" class="button form-back__button">Рассчитать стоимость</button>
 					</form>
 						<h3 class="form-back__subbutton__text">Мы перезвоним Вам в течение 60 секунд</h3>
@@ -225,12 +257,105 @@
 			</div>
 		</div>
 	</section>
+
+	<section class="price">
+		<div class="container">
+			<h2 class="section-title_center section-title price__title wow fadeInUp" data-wow-delay="0.2s">У нас очень гибкая система скидок на комплексные работы!</h2>
+			<!-- /.section-title__center section-title -->
+			<h3 class="section-subtitle price__subtitle">Прайс на наши услуги</h3>
+			<div class="price-wrap">
+				<div class="card wow fadeInUp" data-wow-delay="0.2s">
+					<div class="card__img-wrap">
+						<img src="img/price/price-1.jpg" alt="price" class="card__img">
+					</div>
+					<h4 class="card__title">Ремонт ванных комнат и с/у</h4>
+					<a href="" class="card__link">Узнать цены</a>
+				</div>
+				<div class="card wow fadeInUp" data-wow-delay="0.4s">
+					<div class="card__img-wrap">
+						<img src="img/price/price-2.jpg" alt="price" class="card__img">
+					</div>
+					<h4 class="card__title">Ремонт комнат и квартир</h4>
+					<a href="" class="card__link">Узнать цены</a>
+				</div>
+				<div class="card wow fadeInUp" data-wow-delay="0.6s">
+					<div class="card__img-wrap">
+						<img src="img/price/price-3.jpg" alt="price" class="card__img">
+					</div>
+					<h4 class="card__title">Отделка офисных помещений</h4>
+					<a href="" class="card__link">Узнать цены</a>
+				</div>
+				<div class="card wow fadeInUp" data-wow-delay="0.2s">
+					<div class="card__img-wrap">
+						<img src="img/price/price-4.jpg" alt="price" class="card__img">
+					</div>
+					<h4 class="card__title">Ремонт в новостройках</h4>
+					<a href="" class="card__link">Узнать цены</a>
+				</div>
+				<div class="card wow fadeInUp" data-wow-delay="0.4s">
+					<div class="card__img-wrap">
+						<img src="img/price/price-5.jpg" alt="price" class="card__img">
+					</div>
+					<h4 class="card__title">Ремонт кухонь</h4>
+					<a href="" class="card__link">Узнать цены</a>
+				</div>
+				<div class="card wow fadeInUp" data-wow-delay="0.6s">
+					<div class="card__img-wrap">
+						<img src="img/price/price-6.jpg" alt="price" class="card__img">
+					</div>
+					<h4 class="card__title">Ремонт дач и коттеджей</h4>
+					<a href="" class="card__link">Узнать цены</a>
+				</div>
+			</div>
+		</div>
+		<!-- /.container -->
+	</section>
+	<!-- /.price -->
+
+	<section class="order">
+		<div class="container">
+			<h2 class="section-title_center section-title order__title wow fadeInUp" data-wow-delay="0.2s">Наши специалисты готовы выехать на замер<br>в любое удобное для Вас время</h2>
+			<h3 class="section-subtitle order__subtitle">5 шагов до ремонта</h3>
+			<div class="order-wrap">
+				<div class="stage stage-after wow flipInY" data-wow-delay="0.2s">
+					<div class="stage__img stage__img-1">
+					</div>
+					<h4 class="stage__title">Вы звоните нам или оставляете заявку</h4>
+				</div>
+				<div class="stage stage-after wow flipInY" data-wow-delay="0.4s">
+						<div class="stage__img stage__img-2">
+						</div>
+						<h4 class="stage__title">Согласуем удобное для Вас время выезда специалиста на замер</h4>
+				</div>
+				<div class="stage stage-after wow flipInY" data-wow-delay="0.6s">
+						<div class="stage__img stage__img-3">
+						</div>
+						<h4 class="stage__title">Рассчитываем смету согласовываем<br>с Вами</h4>
+				</div>
+				<div class="stage stage-after wow flipInY" data-wow-delay="0.8s">
+						<div class="stage__img stage__img-4">
+						</div>
+						<h4 class="stage__title">Подписываем договор закупаем материал<br>по оптовым ценам</h4>
+				</div>
+				<div class="stage wow flipInY" data-wow-delay="1s">
+						<div class="stage__img stage__img-5">
+						</div>
+						<h4 class="stage__title">Выполняем ремонт<br>в указанные сроки</h4>
+				</div>
+			</div>
+		</div>
+		<div class="order-bottom">
+			<h2 class="order-bottom__title">Ремонт&nbsp;обойдется&nbsp;Вам&nbsp;дешевле,так&nbsp;как<br>мы используем качественные материалы по оптовым ценам</h2>
+		</div>
+	</section>
+
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 <script src="js/jquery.magnific-popup.js"></script>
 <script src="js/slick.min.js"></script>
 <script src="js/owl.carousel.min.js"></script>
 <script src="js/jquery.mask.min.js"></script>
+<script src="js/wow.min.js"></script>
 <script src="js/script.js"></script>
 </body>
 </html>

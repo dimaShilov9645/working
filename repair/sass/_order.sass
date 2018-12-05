@@ -1,0 +1,71 @@
+.hidden
+	opacity: 0
+.visible
+	opacity: 1
+
+.order
+	color: #000
+	&__title
+		font-size: 30px
+	&__subtitle
+		+thin
+		font-size: 20px
+		margin-bottom: 70px
+	&-wrap
+		display: flex
+		flex-wrap: wrap
+		justify-content: center
+		margin-bottom: 80px
+	&-bottom
+		background-color: $primary-color
+		padding: 95px 0
+		text-align: center
+		line-height: 1.563
+		animation-name: animationBox
+		animation-duration: 2.5s
+		animation-timing-function: linear
+
+		&__title
+			+light
+			font-size: 32px
+.stage-after
+	&:after
+		content: ''
+		display: inline-block
+		width: 75px
+		height: 26px
+		position: absolute
+		top: -12px
+		right: -72px
+		background-image: url(../img/stage/arrow.png)
+		background-repeat: no-repeat
+		background-position: center		
+.stage
+	max-width: 157px
+	margin: 0 35px
+	text-align: center
+	position: relative
+	display: inline-block
+	&__img
+		margin: 0 auto
+		height: 94px
+		width: 94px
+		border: 3px solid $primary-color
+		border-radius: 50%
+		background-repeat: no-repeat
+		background-position: center
+		&-1
+			background-image: url('../img/stage/stage-1.png')
+		&-2
+			background-image: url('../img/stage/stage-2.png')
+		&-3
+			background-image: url('../img/stage/stage-3.png')
+		&-4
+			background-image: url('../img/stage/stage-4.png')
+		&-5
+			background-image: url('../img/stage/stage-5.png')
+	&__title
+		margin-top: 30px
+		font-size: 14px
+		+light
+		color: #000
