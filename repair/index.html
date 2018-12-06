@@ -43,6 +43,15 @@
         return valid;
 		}
 </script>
+<script src="https://api-maps.yandex.ru/2.1/?apikey=80405a68-6741-47b6-821f-59639aa75f0a&lang=ru_RU" type="text/javascript">
+</script>
+<script type="text/javascript">
+    // Функция ymaps.ready() будет вызвана, когда
+    // загрузятся все компоненты API, а также когда будет готово DOM-дерево.
+    
+     
+   
+</script>
 </head>
 <body>
 	<header class="header">
@@ -350,9 +359,7 @@
 	</section>
 
 	<footer class="footer">
-		<div class="map">
-			<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A8582cef7a0560d2c39b9cc16d750702ae52951cb880deaad0e29bdd09fbab5d2&amp;width=100%25&amp;height=100%&amp;lang=ru_RU&amp;scroll=false"></script>
-		</div>
+		<div class="map" id="map"></div>
 		<div class="contacts">
 			<h2 class="contacts__title">Приезжайте к нам в гости!<br>Проконсультируем Вас<br>по всем вопросам ремонта</h2>
 			<div class="contacts-wrap">

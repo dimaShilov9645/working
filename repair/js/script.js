@@ -89,3 +89,37 @@ $('form').submit(function(event) {
 
   new WOW().init();
 });
+
+ymaps.ready(init);
+var myMap, myPlacemark, myPin;
+    function init(){ 
+        // Создание карты.    
+        myMap = new ymaps.Map("map", {
+            center: [55.611480, 37.201290],
+            zoom: 17
+        });
+
+        myMap.behaviors.disable([
+            'drag',
+            'scrollZoom'
+          ]);
+
+        myPin = new ymaps.GeoObjectCollection({}, {
+          /*preset: 'islands#redIcon',*/
+          /*draggable: true,*/
+          iconLayout: 'default#image',
+          iconImageHref: 'img/pin.png',
+          iconImageSize: [64, 64],
+          iconImageOffset: [-50, -50]
+        });
+      
+        myPlacemark = new ymaps.Placemark([55.611482, 37.201292],{
+          balloonContentHeader: 'Привет',
+          balloonContentBody: 'Привет',
+          balloonContentFooter: 'Привет',
+          hintContent: 'Привет'
+        });
+
+        myPin.add(myPlacemark);
+        myMap.geoObjects.add(myPin);
+   }
