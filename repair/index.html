@@ -174,7 +174,7 @@
 				<form action="#" class="modal-form-media" name="form_valid2" onsubmit="return validate_form2();">
 					<input name="name" type="text" class="input input-name modal-form__input" placeholder="Выше имя" required="required">
 					<input name="phone" type="tel" class="input input-tel modal-form__input" placeholder="Выш телефон" data-mask="+7 (000) 000-00-00" required="required" pattern="[\+]\d{1}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}">
-					<button type="submit" class="button modal-form__button">Узнать стоимость</button>
+					<button id="button-submit" type="submit" class="button modal-form__button">Узнать стоимость</button>
 				</form>
 				<div class="modal-form__subbutton">
 						<p class="modal-form__subbutton__text">Или Вы можфете перезвонить нам сами по телефону:</p>
@@ -390,6 +390,9 @@
 <script>
 	document.querySelector('#button-callback').addEventListener('click', function(){
 		yaCounter51465386.reachGoal('btn'); return true;
+	}),
+	document.querySelector('#button-submit').addEventListener('submit', function(){
+		yaCounter51465386.reachGoal('btnForm'); return true;
 	})
 </script>
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
