@@ -51,6 +51,13 @@ jQuery(document).ready(function($) {
   });
 });*/
 
+document.querySelector('#button-callback').addEventListener('click', function(){
+    yaCounter51465386.reachGoal('btn'); return true;
+  })
+  document.querySelector('#button-submit').addEventListener('click', function(){
+    yaCounter51465386.reachGoal('btnform'); return true;
+  });
+
 $(document).ready(function(){
   $(".slider").owlCarousel({
   	rtl:true,
