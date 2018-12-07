@@ -171,10 +171,10 @@
 			<div class="modal-form">
 				<h2 class="modal-form__title">Узнайте точную стоимость ремонта по телефону!</h2>
 				<span class="modal-form__subtitle">Заполните поля ниже - мы свяжемся с Вами</span>
-				<form action="#" class="modal-form-media" name="form_valid2" onsubmit="return validate_form2();">
+				<form action="#" class="modal-form-media" name="form_valid2" onsubmit="return validate_form2();" method="get">
 					<input name="name" type="text" class="input input-name modal-form__input" placeholder="Выше имя" required="required">
 					<input name="phone" type="tel" class="input input-tel modal-form__input" placeholder="Выш телефон" data-mask="+7 (000) 000-00-00" required="required" pattern="[\+]\d{1}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}">
-					<button id="button-submit" type="submit" class="button modal-form__button">Узнать стоимость</button>
+					<button id="button-submit" type="submit" class="button modal-form__button" onsubmit="yaCounter51465386.reachGoal('btnform'); return true;">Узнать стоимость</button>
 				</form>
 				<div class="modal-form__subbutton">
 						<p class="modal-form__subbutton__text">Или Вы можфете перезвонить нам сами по телефону:</p>
@@ -390,8 +390,8 @@
 <script>
 	document.querySelector('#button-callback').addEventListener('click', function(){
 		yaCounter51465386.reachGoal('btn'); return true;
-	});
-	document.querySelector('#button-submit').addEventListener('submit', function(){
+	})
+	document.querySelector('#button-submit').addEventListener('click', function(){
 		yaCounter51465386.reachGoal('btnform'); return true;
 	});
 </script>

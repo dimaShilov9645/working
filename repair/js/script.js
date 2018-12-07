@@ -83,6 +83,7 @@ $('form').submit(function(event) {
         $(this).find("input").val("");
         alert("Сообщение успешно отправлено");
         $("form").trigger("reset");
+        $.magnificPopup.close();
       });
       return false;
     });
