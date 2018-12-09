@@ -131,3 +131,10 @@ var myMap, myPlacemark, myPin;
         myPin.add(myPlacemark);
         myMap.geoObjects.add(myPin);
    }
+
+  document.querySelector('#button-callback').addEventListener('click', function(){
+    yaCounter51465386.reachGoal('btn'); return true;
+  })
+  document.querySelector('#button-submit').addEventListener('click', function(){
+    yaCounter51465386.reachGoal('btnform'); return true;
+  });
