@@ -120,11 +120,11 @@
 				margin: 20px 0
 	  		font-size: 14px
 	 &__input
-	  width: 85%
+	  width: 95%
 	  margin: 4px 0
 	  height: 58px
 	 &__button
-	  width: 85%
+	  width: 95%
 	  margin: 24px 0
 	  height: 58px
 	 &__subbutton__text
@@ -150,6 +150,12 @@
 		&__title
 			padding-left: 90px
 			padding-right: 90px
+	.reclame
+		padding: 20px 0
+	.advertising
+		flex-direction: column
+		&__card
+			margin: 10px auto
 	
 @media (max-width: 920px)
 	.modal
@@ -269,7 +275,19 @@
 			margin: 0
 			font-size: 13px
 			+light
-
+	.documents
+		padding: 1px 0 50px 0
+		&__title
+			font-size: 22px
+			margin: 30px 0 0px 0
+	.paper
+		flex-direction: column
+		padding: 35px 0 0 0
+		&-card
+			margin: 20px auto
+			&__text
+				font-size: 16px
+				margin: 16px 0
 
 @media (max-width: 480px)
 	.container
@@ -306,14 +324,17 @@
 		&__title
 			font-size: 18px
 			text-align: center
+			margin-bottom: 30px
 		&__subtitle
 			text-align: center
+			margin-bottom: 20px
 		&__input
-			width: 98%
+			margin-bottom: 10px
+			width: 90%
 			&:first-child
 				margin-right: 0
 		&__button
-			width: 98%
+			width: 90%
 			font-size: 14px
 			padding: 25px
 			margin: 0 auto
@@ -323,7 +344,8 @@
 			text-align: center
 			margin-left: 0
 			&__text
-				
+				font-size: 14px
+				margin: 5px
 			&__img
 				&:before
 					display: none
@@ -331,7 +353,7 @@
 		text-align: center
 	.modal
 		&__dialogs
-			height: 80%
+			height: 73%
 		&-form
 			width: 90%
 			&__title
@@ -342,21 +364,21 @@
 				font-size: 11px
 				padding-bottom: 15px
 			&__input
-				width: 90%
-				height: 40px
-				margin: 2px 0
+				width: 95%
+				height: 60px
+				margin: 8px 0
 			&__button
-				width: 90%
-				height: 50px
+				width: 95%
+				height: 60px
 				margin-top: 10px
 				font-size: 13px
 			&__subbutton
 				width: 90%
 				font-size: 12px
 				&__text
-					margin: 15px 0 15px 0
+					margin: 25px 0 15px 0
 				&__tel
-					font-size: 18px
+					font-size: 16px
 	.section
 		&-title
 			font-size: 20px
@@ -438,3 +460,19 @@
 		&__subtitle
 			font-size: 14px
 			+bold
+	.feedback
+		padding: 0
+	.documents
+		padding-bottom: 20px
+		&__title
+			font-size: 16px
+			line-height: 1.5
+			margin: 0
+	.paper
+		flex-direction: column
+		padding: 35px 0 0 0
+		&-card
+			margin: 20px auto
+			&__text
+				font-size: 14px
+				margin: 16px 0
