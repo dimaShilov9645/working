@@ -5,13 +5,13 @@
 		background-size: 45%
 	.lower-form
 		background: url('../img/lower-form-bg.jpg') no-repeat center left 100%
-		background-size: 50%
+		background-size: 45%
 		background-color: #ffc000
 		padding: 400px 0
 
 @media (max-width: 3500px)
 	.lower-form
-		padding: 170px 0
+		padding: 100px 0
 
 @media (max-width: 2200px)
 	.feedback
@@ -19,11 +19,11 @@
 		background: url('../img/feedback/feedback.bg.jpg') no-repeat center left 100%
 		background-size: 45%
 	.lower-form
-		padding: 90px 0
+		padding: 50px 0
+		background-size: 45%
 
 @media (max-width: 1750px)
 	.feedback
-		padding: 50px
 		background: url('../img/feedback/feedback.bg.jpg') no-repeat center right
 		background-size: content
 		&:before
@@ -48,7 +48,9 @@
 		&-image
 			transform-origin: center
 			transform: scale(1)
-			z-index: 1;
+			z-index: 1
+			&__img
+				width: 300px
 	.slider
 		&__item
 			img
@@ -69,7 +71,7 @@
 		margin: 0 8px
 	.footer
 	.map
-		max-height: 60vh
+		max-height: 500px
 	.contacts
 		&__title
 			font-size: 18px
@@ -150,6 +152,14 @@
 		&__title
 			padding-left: 90px
 			padding-right: 90px
+	.card
+		max-width: 280px
+		min-height: 340px
+		text-align: center
+		padding-bottom: 47px
+		border: 1px solid #e8e8e8
+		margin: 10px
+		transition: 0.2s
 	.reclame
 		padding: 20px 0
 	.advertising
@@ -250,7 +260,7 @@
 	.footer
 		width: 100%
 	.map
-		max-height: 45vh
+		max-height: 400px
 		width: 100%
 	.contacts
 		&__title
@@ -288,10 +298,30 @@
 			&__text
 				font-size: 16px
 				margin: 16px 0
+	.modal
+		&-form
+			&__subbutton
+				display: none
+
+@media (max-width: 640px)
+	.price
+		&__title
+			padding-left: 90px
+			padding-right: 90px
+	.card
+		max-width: 370px
+		min-height: 410px
+	.footer
+		flex-direction: column-reverse
+		width: 100%
+	.map
+		max-height: 400px
 
 @media (max-width: 480px)
+	br
+		display: none
 	.container
-		width: 460px
+		width: 100%
 	.hidden-img
 		display: block
 		width: 20px
@@ -305,9 +335,7 @@
 			&__city
 				font-size: 12px
 			&__phone
-				font-size: 16px
-	.container
-		width: 100%
+				font-size: 14px
 	.main
 		padding: 15px
 		&-text
@@ -315,6 +343,7 @@
 		 &__title
 		 	font-size: 18px
 		 	margin-bottom: 30px
+		 	line-height: 1.5
 		 	span
 		 		font-size: 14px
 		&-advantages
@@ -325,6 +354,7 @@
 			font-size: 18px
 			text-align: center
 			margin-bottom: 30px
+			line-height: 1.2
 		&__subtitle
 			text-align: center
 			margin-bottom: 20px
@@ -382,6 +412,7 @@
 	.section
 		&-title
 			font-size: 20px
+			line-height: 1.2
 			margin: 0 0 25px 0
 	.portfolio
 		padding: 35px 0 100px 0
@@ -432,9 +463,6 @@
 			&__title
 				font-size: 16px
 				word-wrap: break-word
-	.footer
-		flex-direction: column-reverse
-		width: 100%
 	.map
 		max-height: 45vh
 		width: 100%
@@ -470,7 +498,7 @@
 			margin: 0
 	.paper
 		flex-direction: column
-		padding: 35px 0 0 0
+		padding: 15px 0 0 0
 		&-card
 			margin: 20px auto
 			&__text
