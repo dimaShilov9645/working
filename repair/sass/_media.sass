@@ -326,6 +326,12 @@
 		width: 100%
 	.map
 		max-height: 400px
+	.main
+		&-text
+			&__title
+				font-size: 27px
+				span
+					font-size: 18px
 
 @media (max-width: 480px)
 	br
@@ -475,33 +481,32 @@
 			&__title
 				font-size: 16px
 				word-wrap: break-word
-.map
-	max-height: 45vh
-	width: 100%
-.contacts
-	&__title
-		font-size: 16px
-		margin: 20px auto 30px auto
-		text-align: center
-		+bold
+	.map
+		max-height: 45vh
+		width: 100%
+	.contacts
+		&__title
+			font-size: 16px
+			margin: 20px auto 30px auto
+			text-align: center
 	&-wrap
 		max-width: 260px
 		margin: 0px auto
-.phone-address
-	margin: 18px auto
-	&__icon
-		width: 30px
-	&__text
-		padding: 0 12px
-		line-height: 1.2
-.feedback
-	padding: 0
-.documents
-	padding-bottom: 20px
-	&__title
-		font-size: 16px
-		line-height: 1.5
-		margin: 0
+	.phone-address
+		margin: 18px auto
+		&__icon
+			width: 30px
+		&__text
+			padding: 0 12px
+			line-height: 1.2
+	.feedback
+		padding: 0
+	.documents
+		padding-bottom: 20px
+		&__title
+			font-size: 16px
+			line-height: 1.5
+			margin: 0
 	.paper
 		flex-direction: column
 		padding: 15px 0 0 0
