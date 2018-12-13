@@ -274,8 +274,8 @@
 			max-width: 260px
 			margin: 0px auto
 	.phone-address
-		margin: 25px 0
-		margin-left: 20px
+		margin: 25px auto
+		width: 180px
 		&__icon
 			padding-top: 6px
 		&__text
@@ -301,9 +301,17 @@
 				font-size: 16px
 				margin: 16px 0
 	.modal
+		&__dialogs
+			display: flex
+			width: 86%
+			height: 530px
 		&-form
 			&__subbutton
 				display: none
+	.section
+		&-title
+			font-size: 20px
+			line-height: 1.5
 
 @media (max-width: 640px)
 	.price
@@ -411,13 +419,13 @@
 					margin: 25px 0 15px 0
 				&__tel
 					font-size: 16px
-.visible_br
-	display: block
+	.visible_br
+		display: block
 	.section
 		&-title
-			font-size: 20px
+			font-size: 18px
 			line-height: 1.2
-			margin: 0 0 25px 0
+			margin: 0px 0 25px 0
 	.portfolio
 		padding: 35px 0 100px 0
 	.form-back
@@ -427,8 +435,8 @@
 				font-size: 16px
 			&__subtitle
 				font-size: 12px
-		&__subbutton__text
-			font-size: 12px
+			&__subbutton__text
+				font-size: 12px
 	.price
 		&__title
 			font-size: 16px
@@ -467,39 +475,33 @@
 			&__title
 				font-size: 16px
 				word-wrap: break-word
-	.map
-		max-height: 45vh
-		width: 100%
-	.contacts
-		&__title
-			font-size: 16px
-			margin: 20px auto 30px auto
-			text-align: center
-			+bold
-		&-wrap
-			max-width: 260px
-			margin: 0px auto
-	.phone-address
-		margin: 18px 30px
-		&__icon
-			padding-top: 6px
-			padding-left: 10px
-		&__text
-			padding: 0 12px
-			line-height: 1.2
-		&__title
-			font-size: 15px
-		&__subtitle
-			font-size: 14px
-			+bold
-	.feedback
-		padding: 0
-	.documents
-		padding-bottom: 20px
-		&__title
-			font-size: 16px
-			line-height: 1.5
-			margin: 0
+.map
+	max-height: 45vh
+	width: 100%
+.contacts
+	&__title
+		font-size: 16px
+		margin: 20px auto 30px auto
+		text-align: center
+		+bold
+	&-wrap
+		max-width: 260px
+		margin: 0px auto
+.phone-address
+	margin: 18px auto
+	&__icon
+		width: 30px
+	&__text
+		padding: 0 12px
+		line-height: 1.2
+.feedback
+	padding: 0
+.documents
+	padding-bottom: 20px
+	&__title
+		font-size: 16px
+		line-height: 1.5
+		margin: 0
 	.paper
 		flex-direction: column
 		padding: 15px 0 0 0

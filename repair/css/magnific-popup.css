@@ -111,9 +111,10 @@ padding: 0}
   right: 8%;
   top: 6%;
 }
-@media (max-width: 800px){
+@media (max-width: 770px){
   .mfp-close {
   right: 10%;
+  top: 14%;
 }
 }
 @media (max-width: 480px){
